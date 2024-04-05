@@ -46,7 +46,10 @@ def update(sequence=txt):
     }
     # POST resquest a server to accept the data enclossed in the body of the request message
     # "https://api.esmatlas.com/foldSequence/v1/pdb/" this URL is where ESMFold API returns the 3D structures
-    response = requests.post('https://api.esmatlas.com/foldSequence/v1/pdb/', headers=headers, data=sequence)
+    # Since aprox oct 2023, there is a SSL certification failure with ESMFold, until that is corrected, we are going to disable the SSL certificate check with "verify = False"
+    # You should avoid doing that because it makes your app vulnerable to hacking, like 'man-in-the-middle' attacks
+    # We are doing it to test the app
+    response = requests.post('https://api.esmatlas.com/foldSequence/v1/pdb/', headers=headers, data=sequence, verify = False)
     name = sequence[:3] + sequence[-3:] # Name with the first 3 and last 3 letters of the seq
     pdb_string = response.content.decode('utf-8') # Decodes from bytes to string
 
