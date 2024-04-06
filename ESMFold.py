@@ -20,7 +20,7 @@ st.sidebar.write("This predictor is limited to 400 aminoacids")
 # stmol
 def render_mol(pdb):
     # To avoid bugs or errors
-    if not pbd:
+    if not pdb:
         raise ValueError("Invalid PBD object")
     # New variable pbdview that creates a 3D viewer model
     pdbview = py3Dmol.view()
