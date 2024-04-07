@@ -5,4 +5,4 @@ biotite
 ipywidgets
 ipython_genutils
 certifi
-Bio.SeqUtils.ProtParam
+biopython
