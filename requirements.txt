@@ -7,4 +7,4 @@ ipython_genutils
 certifi
 biopython
 ydata-profiling==0.0.1
-streamlit-pandas-profiling=0.0.1
+streamlit-pandas-profiling==0.0.1
