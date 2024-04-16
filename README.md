@@ -5,3 +5,6 @@
 - pIDDT score: A confidence score in the prediction.
 - Protein analysis: Includes molecular weight, isoelectric point (the pH at which the protein's net charge is zero), and secondary structure fraction (the proportion of alpha-helices, beta-sheets, and turns, respectively)
 - App: [*ESMFold*](https://appapps-5snwj5kb3znsdczf9eozz3.streamlit.app/)
+
+'EDA' is a exploratory data analysis app. It can be either a minimal or explorative analysis and the report can be download in json and html formats
+- [Repository](https://github.com/KarlaMel24/EDA_App/tree/main)
